@@ -7,27 +7,26 @@ import devImg from "../assets/images/dev_balanced.png";
 import openSourceImg from "../assets/images/open-source.png";
 import Content2 from "../components/widgets/Content2.astro";
 const metadata = {
-	title: `${siteConfig.name} — The next step for your project`,
-	description:
-		"A modern and professional template for your web projects with Astro and Tailwind CSS. Boost your development with a solid foundation.",
+	title: `${siteConfig.name} — El proyecto que nadie pidió`,
+	description: siteConfig.description,
 	ignoreTitleTemplate: true,
 };
 ---
 
 <BaseLayout {metadata}>
 	<Hero
-		title={`Starter Template for <br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Web Developers</span>`}
-		tagline="Astro v5 + Tailwind v4"
-		description={`${siteConfig.description}. A solid foundation to start your projects with best practices.`}
+		title={`Carajo el fierro<br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">me arde</span>`}
+		tagline="Ubuntu Server 24.04.4 LTS"
+		description={`${siteConfig.description}`}
 		actions={[
 			{
-				text: "Get Started",
-				href: "https://github.com/devgelo-labs/astro-starter-pro",
+				text: "GitHub",
+				href: "https://github.com/ericksebb",
 				variant: "primary",
 				icon: "lucide:github",
 			},
 			{
-				text: "Our Services",
+				text: "Servicios desplegados",
 				href: "/services",
 				variant: "secondary",
 				icon: "lucide:arrow-right",
