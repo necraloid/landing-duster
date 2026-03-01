@@ -38,6 +38,7 @@ export interface HeadlineProps extends Widget {
   title?: string;
   subtitle?: string;
   tagline?: string;
+  tagLink?: string;
   titleAs?: string;
 }
 
