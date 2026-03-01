@@ -6,17 +6,20 @@ import Features from "../components/widgets/Features.astro";
 import devImg from "../assets/images/dev_balanced.png";
 import openSourceImg from "../assets/images/open-source.png";
 import Content2 from "../components/widgets/Content2.astro";
+import Jellyfish from "/public/jellyfish.svg";
+import Image from "astro/components/Image.astro";
 const metadata = {
 	title: `${siteConfig.name} — El proyecto que nadie pidió`,
 	description: siteConfig.description,
-	ignoreTitleTemplate: true,
+	ignoreTitleTemplate: true
 };
 ---
-
 <BaseLayout {metadata}>
+  <Image src={Jellyfish} alt="Jellyfish" class="absolute top-18 left-1/7 w-xl object-cover opacity-50 pointer-events-none" inferSize={true}/>
 	<Hero
-		title={`Carajo el fierro<br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">me arde</span>`}
+		title={`Efectivamente, otro<br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">homeserver</span> más`}
 		tagline="Ubuntu Server 24.04.4 LTS"
+		tagLink="https://example.com/contact"
 		description={`${siteConfig.description}`}
 		actions={[
 			{
@@ -34,7 +37,7 @@ const metadata = {
 			},
 		]}
 	/>
-	<Features
+	<!--<Features
 		tagline="Features"
 		title="What's Included"
 		subtitle="A selection of tools and configurations to streamline your workflow."
@@ -60,21 +63,21 @@ const metadata = {
 				iconClass: "bg-pink-500/10 text-pink-400",
 			},
 		]}
-	/>
+	/>-->
 	<Content2
 		items={[
 			{
-				title: "Responsive Design",
+				title: "Economía circular",
 				description:
-					"Base configuration for Meta tags, Open Graph, and Sitemap generation.",
-				icon: "lucide:scan-search",
-				iconClass: "bg-blue-500/10 text-blue-400",
+					"Reutiliza hardware antiguo para reducir el desperdicio electrónico.",
+				icon: "lucide:recycle",
+				iconClass: "bg-green-500/10 text-green-400",
 			},
 			{
-				title: "High Performance",
-				description: "Lightweight structure for fast load times.",
+				title: "Alto rendimiento",
+				description: "",
 				icon: "lucide:zap",
-				iconClass: "bg-purple-500/10 text-purple-400",
+				iconClass: "bg-yellow-500/10 text-yellow-400",
 			},
 			{
 				title: "Tailwind v4",
@@ -89,9 +92,9 @@ const metadata = {
 	>
 		<Fragment>
 			<h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-				Development
+				Sostenibilidad sin <span class="bg-linear-to-r from-cyan-600 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">sacrificios.</span>
 			</h3>
-			We provide a solid foundation to start your projects with best practices.
+			<b>¿4GB RAM?</b> Windows lloraría en su tumba, <b>Linux</b> te lo banca
 		</Fragment>
 	</Content2>
 	<Content2

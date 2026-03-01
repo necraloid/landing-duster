@@ -8,6 +8,7 @@ import { Icon } from "astro-icon/components";
 const {
     title = await Astro.slots.render("title"),
     tagline,
+    tagLink,
     description = await Astro.slots.render("description"),
     actions = [],
     id,
@@ -28,13 +29,15 @@ const { container: containerClassProp = "" } = classes;
     <div class="text-center">
         {
             tagline && (
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6">
+          <a href={tagLink} target={tagLink?.includes("http") && ("_blank") || "_self"} rel="noopener noreferrer">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/35 border border-primary/50 text-primary text-xs font-semibold mb-6">
                     <span class="relative flex h-2 w-2" aria-hidden="true">
                         <span class="absolute inline-flex h-full w-full rounded-full bg-primary/60 opacity-75 animate-ping motion-reduce:animate-none" />
                         <span class="relative inline-flex h-2 w-2 rounded-full bg-primary" />
                     </span>
                     {tagline}
                 </div>
+          </a>
             )
         }
         {
