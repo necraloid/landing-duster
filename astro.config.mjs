@@ -5,7 +5,7 @@ import icon from "astro-icon";
 import remarkReadingTime from "remark-reading-time";
 
 export default defineConfig({
-  site: "https://ericsebb.qzz.io/",
+  site: "https://ericsebb.qzz.io/landing",
   integrations: [sitemap(), icon()],
   markdown: {
     remarkPlugins: [
