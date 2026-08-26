@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Dusto homeserver",
   description: `Bienvenido a mi homeserver, date una vuelta y mira como logré dar un nuevo propósito a una computadora vieja y como tú puedes hacer lo mismo :D`,
-  url: "https://ericsebb.qzz.io",
+  url: "https://ericsebb.qzz.io/landing",
   lang: "es",
   locale: "es_EC",
   author: "Necraloid",
