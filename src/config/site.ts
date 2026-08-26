@@ -13,10 +13,11 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/necralo.id/",
   },
   navLinks: [
-    { text: "Home", href: "/" },
-    { text: "Acerca", href: "/about" },
-    { text: "Servicios", href: "/services" },
-    { text: "Blog", href: "/blog" },
-    { text: "Contacto", href: "/contact" },
+    { text: "Home", href: "/landing/" },
+    { text: "Acerca", href: "/landing/landing" },
+    { text: "Servicios", href: "/landing/services" },
+    { text: "Blog", href: "/landing/blog" },
+    { text: "Contacto", href: "/landing/contact" },
+    { text: "Multimedia", href: "/media"}
   ],
 };
