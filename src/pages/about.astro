@@ -6,9 +6,9 @@ import Values from "../components/widgets/Values.astro";
 import aboutImage from "../assets/images/about-office.webp";
 
 const metadata = {
-    title: "About us",
+    title: "Quien soy",
     description:
-        "Learn more about our vision, values, and the team behind Astro Starter Pro.",
+        "Conoce la visión de un pseudo-ingeniero con poco tiempo libre, motivado por el Free and Open Source Software y el odio hacia las corporaciones y el DRM.",
 };
 
 const values = [
@@ -53,10 +53,11 @@ const optimizedImage = await getImage({
 <BaseLayout {metadata}>
     <link slot="head" rel="preload" href={optimizedImage.src} as="image" />
     <Content2
-        title="Our Vision"
+        title="Quien pishula soy"
         description={[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Hola, soy Erick, un pseudo-ingeniero con poco tiempo libre, motivado por el Free and Open Source Software y el odio hacia las corporaciones y el DRM.",
+            "Me especializo en el despliegue en producción, gestiones de servidores Linux, y disfruto explorando nuevas herramientas y soluciones para mejorar mi flujo de trabajo.",
+          
         ]}
         tagline="About"
         image={aboutImage}
