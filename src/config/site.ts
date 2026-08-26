@@ -1,16 +1,16 @@
 export const siteConfig = {
   name: "Dusto homeserver",
-  description: "Bienvenido a mi homeserver, date una vuelta y mira como logré dar un nuevo propósito a una computadora y como tú puedes hacer lo mismo <h1 style='''>:D</h1>",
+  description: `Bienvenido a mi homeserver, date una vuelta y mira como logré dar un nuevo propósito a una computadora vieja y como tú puedes hacer lo mismo :D`,
   url: "https://ericsebb.qzz.io",
   lang: "es",
   locale: "es_EC",
-  author: "ericksebb",
+  author: "Necraloid",
   twitter: "",
   ogImage: "/src/assets/og-image.png",
   socialLinks: {
     github: "https://github.com/ericksebb",
     discord: "https://discord.com",
-    instagram: "https://www.instagram.com/ericsebb/",
+    instagram: "https://www.instagram.com/necralo.id/",
   },
   navLinks: [
     { text: "Home", href: "/" },
